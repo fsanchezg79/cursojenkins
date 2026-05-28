@@ -1,20 +1,11 @@
-pipeline{
-  agent any
-  stages{
-    stage('Build'){
-      steps{
-        echo 'Building...'
-      }
+pipeline {
+    agent any
+
+    stages {
+        stage('Deploy') {
+            steps {
+                writeFile file: 'saludo.txt', text: 'Hola Jenkins'
+            }
+        }
     }
-    stage('Test'){
-      steps{
-        echo 'Testing...'
-      }
-  }
-  stage('Deploy'){
-      steps{
-        echo 'Deploying...'
-      }
-  }
-}
 }
