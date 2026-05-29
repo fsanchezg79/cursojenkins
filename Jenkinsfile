@@ -13,8 +13,8 @@ pipeline {
                 stage('Procesar datos1.txt ') { 
                     steps { 
                         ansiColor('vga') {
-                        echo "[31m[P1]Procesando datos1.txt\033[0m"
-                        echo "[31m[P1]\033[0m" 
+                        echo "[P1]Procesando datos1.txt"
+                        echo "[P1]" 
                         }
                         sh 'cat datos1.txt'
                         sleep(5)
@@ -23,8 +23,8 @@ pipeline {
                 stage('Procesar datos2.txt ') { 
                     steps {
                         ansiColor('vga') {
-                        echo "[32m[P1]Procesando datos2.txt\033[0m"
-                        echo "[32m[P1]\033[0m"
+                        echo "[P2]Procesando datos2.txt"
+                        echo "[P2] "
                         }
                         sh 'cat datos2.txt'
                         sleep(10)
@@ -33,8 +33,8 @@ pipeline {
                 stage('Procesar datos3.txt ') { 
                     steps {
                         ansiColor('vga') {
-                        echo "[33m[P1]Procesando datos2.txt\033[0m"
-                        echo "[33m[P1]\033[0m"
+                        echo "[P3]Procesando datos2.txt"
+                        echo "[P3] "
                         }
                         sh 'cat datos3.txt'
                         sleep(15)
