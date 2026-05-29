@@ -15,7 +15,7 @@ pipeline {
                         echo '[P1]Procesando datos1.txt'
                         echo "[P1]" 
                         sh 'cat datos1.txt'
-                        sleep(5000)
+                        sleep(5)
                     } 
                 }
                 stage('Procesar datos2.txt ') { 
@@ -23,7 +23,7 @@ pipeline {
                         echo '[P2]Procesando datos2.txt'
                         echo "[P1] "
                         sh 'cat datos2.txt'
-                        sleep(10000)
+                        sleep(10)
                     } 
                 }
                 stage('Procesar datos3.txt ') { 
@@ -31,7 +31,7 @@ pipeline {
                         echo '[P3]Procesando datos3.txt'
                         echo "[P1] "
                         sh 'cat datos3.txt'
-                        sleep(15000)
+                        sleep(15)
                     } 
                 }
             } 
