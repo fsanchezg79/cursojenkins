@@ -36,5 +36,9 @@ pipeline {
                 }
             } 
         }
+        stage('Resumen') {
+             steps { 
+                 echo "Todos los porcesos han finalizado correctamente"
+             }
     }
 }
