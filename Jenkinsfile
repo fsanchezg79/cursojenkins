@@ -21,7 +21,7 @@ pipeline {
                 stage('Procesar datos2.txt ') { 
                     steps { 
                         echo '[P2]Procesando datos2.txt'
-                        echo "[P1] "
+                        echo "[P3] "
                         sh 'cat datos2.txt'
                         sleep(10)
                     } 
@@ -29,9 +29,15 @@ pipeline {
                 stage('Procesar datos3.txt ') { 
                     steps { 
                         echo '[P3]Procesando datos3.txt'
-                        echo "[P1] "
+                        echo "[P3] "
                         sh 'cat datos3.txt'
                         sleep(15)
+                    } 
+                }
+                stage('Proceso fallido') { 
+                    steps { 
+                        echo '[P4]Procesando fallar'
+                        sh 'cat noexiste.txt'
                     } 
                 }
             } 
