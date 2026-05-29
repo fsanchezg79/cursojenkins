@@ -22,7 +22,7 @@ pipeline {
                 }
                 stage('Procesar datos2.txt ') { 
                     steps {
-                        ansiColor('vga') {
+                        ansiColor('xterm') {
                         echo "[P2]Procesando datos2.txt"
                         echo "[P2] "
                         }
@@ -32,7 +32,7 @@ pipeline {
                 }
                 stage('Procesar datos3.txt ') { 
                     steps {
-                        ansiColor('vga') {
+                        ansiColor('css') {
                         echo "[P3]Procesando datos2.txt"
                         echo "[P3] "
                         }
