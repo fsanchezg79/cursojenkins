@@ -34,12 +34,6 @@ pipeline {
                         sleep(15)
                     } 
                 }
-                stage('Proceso fallido') { 
-                    steps { 
-                        echo '[P4]Procesando fallar'
-                        sh 'cat noexiste.txt'
-                    } 
-                }
             } 
         }
         stage('Resumen') {
