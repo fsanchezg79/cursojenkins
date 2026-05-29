@@ -40,5 +40,6 @@ pipeline {
              steps { 
                  echo "Todos los porcesos han finalizado correctamente"
              }
+        }
     }
 }
