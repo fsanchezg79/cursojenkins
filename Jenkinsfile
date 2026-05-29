@@ -12,21 +12,24 @@ pipeline {
            parallel {
                 stage('Procesar datos1.txt ') { 
                     steps { 
-                        echo 'Procesando datos1.txt'
+                        echo '[P1]Procesando datos1.txt'
+                        echo "[P1]" 
                         sh 'cat datos1.txt'
                         sleep(5000)
                     } 
                 }
                 stage('Procesar datos2.txt ') { 
                     steps { 
-                        echo 'Procesando datos2.txt'
+                        echo '[P2]Procesando datos2.txt'
+                        echo "[P1] "
                         sh 'cat datos2.txt'
                         sleep(10000)
                     } 
                 }
                 stage('Procesar datos3.txt ') { 
                     steps { 
-                        echo 'Procesando datos3.txt'
+                        echo '[P3]Procesando datos3.txt'
+                        echo "[P1] "
                         sh 'cat datos3.txt'
                         sleep(15000)
                     } 
